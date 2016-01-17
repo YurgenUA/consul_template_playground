@@ -9,7 +9,7 @@ server {
 
   charset utf-8;
 
-  location ~ ^/images/(.\*)$ {
+  location ~ /images/(.\*)$ {
     proxy_pass http://google.com/$args;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     proxy_set_header Host $host;
