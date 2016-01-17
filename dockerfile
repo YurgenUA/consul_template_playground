@@ -9,4 +9,4 @@ ADD start.sh /bin/start.sh
 RUN rm -v /etc/nginx/conf.d/\*.conf
 
 ADD https://releases.hashicorp.com/consul-template/0.12.2/consul-template_0.12.2_linux_amd64.zip /usr/bin/
-RUN unzip consul-template_0.12.2_linux_amd64.zip /usr/local/bin 
+RUN unzip /usr/bin/consul-template_0.12.2_linux_amd64.zip -d /usr/local/bin 
