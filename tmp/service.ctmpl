@@ -9,7 +9,7 @@ server {
 
   charset utf-8;
 
-  location /images/ {
+  location ~ ^/images/ {
         proxy_pass http://google.com/images;  
   } 
   location ~ ^/python-micro-service/(.\*)$ {
